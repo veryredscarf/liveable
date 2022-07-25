@@ -161,4 +161,17 @@ React ,ReactHook ,ReactRouter ,Redux ,Axios ,Less ,其他插件
 ### 顶部导航
   1. 配置rem，在index.html中
 ### 焦点轮播图
+  切记这个轮播图只适合15版本，16版本，17版本的react，18版本的react不适合，如果不合适的话，那么就需要卸载react安装老版本的react
   参考文档：https://react-swipeable-views.com/demos/demos/
+
+### 安装类的样式库  classnames
+1. 这个库有助于我们对元素进行一些判断处理时，样式是否生效或者选择生效的效果，类似于vue的判断处理
+            <li key={index} className={classnames({'select':判断条件})} ></li>
+
+#### 搭建服务器环境提供数据
+    1. 插件介绍 cors 用于后端处理跨域问题，在server文件夹中的index.js文件夹处理跨域问题
+    2. 安装依赖 npm install express -S   npm install cors -S
+    3. 苦于使用cors 后台解决
+    4. 自定义数据来源 server/data文件夹中
+
+### 首页列表数据显示

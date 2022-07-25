@@ -8,25 +8,25 @@ const BottomNav = ()=>{
     <div className="nav-footer">
       <ul className="clear-fix">
         <li>
-          <NavLink exact="true" to='/'>
+          <NavLink exact={true} to='/'>
             <i className="iconfont icon-home"></i>
             首页
           </NavLink>
         </li>
         <li>
-          <NavLink exact="true" to='/shop'>
+          <NavLink exact={true} to='/shop'>
             <i className="iconfont icon-shangcheng"></i>
             商城
           </NavLink>
         </li>
         <li>
-          <NavLink exact="true" to='/life'>
+          <NavLink exact={true} to='/life'>
             <i className="iconfont icon-jiangbei"></i>
             生活服务
           </NavLink>
         </li>
         <li>
-          <NavLink exact="true" to='/profile'>
+          <NavLink exact={true} to='/profile'>
             <i className="iconfont icon-friend"></i>
             我的
           </NavLink>

@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter as Router,Route,Routes } from 'react-router-dom'
+import {BrowserRouter as Router,Route,Switch } from 'react-router-dom'
 import Home from '../pages/Home/index'
 import LifeService from '../pages/LifeService/index'
 import Profile from '../pages/Profile/index'
@@ -10,12 +10,12 @@ const AppRouter = ()=>{
   return (
     <Router>
       <BottomNav/>
-      <Routes>
-        <Route path='/' exact={false}  element ={<Home/>}/>
-        <Route path='/life' element ={<LifeService/>}/>
-        <Route path='/profile' element ={<Profile/>}/>
-        <Route path='/shop' element ={<Shop/>}/>
-      </Routes>
+      <Switch>
+        <Route path='/' exact={false}  component ={Home}/>
+        <Route path='/life' component={LifeService} />
+        <Route path='/profile' component={Profile} />
+        <Route path='/shop' component={Shop} />
+      </Switch>
     </Router>
   )
 }
