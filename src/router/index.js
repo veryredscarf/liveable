@@ -6,6 +6,7 @@ import Profile from '../pages/Main/Profile/index'
 import Shop from '../pages/Main/Shop/index'
 import BottomNav from '../component/bottomNav'
 import City from "../pages/City/index"
+import Search from "../pages/Search/index"
 
 import Layout from "../pages/Main/layout"
 
@@ -15,6 +16,8 @@ const AppRouter = ()=>{
       
       <Switch>
         <Route path='/city' component={City} />
+        <Route path='/search/:keywords' component={Search} />
+        
         <Layout>
           <BottomNav/>
           <Switch>

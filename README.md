@@ -192,3 +192,32 @@ React ,ReactHook ,ReactRouter ,Redux ,Axios ,Less ,其他插件
 
      创建redux
 5. 关联Redux,存储城市数据
+6. 城市列表的ABC形式表现
+    1. 安装依赖 npm i react-city-select  -S
+    2. 具体页面在page/City/cityLists中都是，src/data/data.json存储的是全国城市信息数据
+    3. 参考网页http://www.voidcc.com/project/react-city-select
+
+### 实现搜索功能
+1. 创建搜索页面，配置路由
+2. 把搜索输入框抽离成单独组件
+3. 监听keyCode进行路由跳转 keyCode ===13
+4. 携带参数跳转路由 三个步骤 ：
+   - 在路由配置文件中，在跳转到的路由上加一个:关键字
+      比如这样：  <Route path='/search/:keywords' component={Search} />  keywords是跳转路由是携带的参数key，可以是任何你想设置的
+   - 在路由跳转页面src/component/SearchInput/index.jsx中有定义，
+      
+      1. 首先是通过设置状态，用来保存当时输入的内容
+      2. 其次是通过onChange事件获取到输入值，通过e.target.value并且保存到状态中,还可以通过ref来获取到元素实例
+      3. 在路由跳转时加上值就行了，不用写key  因为配置路由时已经写了key  如：props.history.push("/search"+keywords)   此处keywords是输入内容
+      4. 判断，当输入内容长度大于0时，才能跳转
+   - 在跳转到的搜索页面中，使用useParams获取到传递过来的参数，前面搜索  房子 ; 搜索页面的地址栏显示： http://localhost:3000/#/search/房子
+
+5. 实现搜索网络请求的接口
+      - 由于后台的问题，每次搜索返回的都是相同的数据
+      - 在api中定义请求方法
+6. 关于列表数据渲染的注意事项
+ - 我们以前都是直接在获取列表数据后直接渲染，但是我们需要Item去渲染每一个试图
+  - 渲染html结构
+  jsx代码：
+  <p dangerouslySetInnerHTML={{__html:data.price+"元/月"}}></p>
+

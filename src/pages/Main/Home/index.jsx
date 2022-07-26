@@ -11,9 +11,11 @@ const Home = ()=>{
   const city = useSelector(state=>state.city)
   return (
      <div>
+      {/* 在首页banner导航处添加城市名称 */}
       <HeaderNav cityName={city.cityName}></HeaderNav>
       <SwiperComponent banners={[Banner1,Banner2,Banner3]}></SwiperComponent>
-      <HomeHotList></HomeHotList>
+      {/* 同时也往列表页传递城市名称，这样方便在获取首页列表数据时，请求对应城市的数据 */}
+      <HomeHotList cityName={city.cityName}></HomeHotList>
      </div>
   )
 }
