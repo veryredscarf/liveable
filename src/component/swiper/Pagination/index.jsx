@@ -12,7 +12,7 @@ const Pagination =(props)=>{
       {
         arr.map((item,index)=>{
           return (
-            <li key={index} className={classnames({'select':currentIndex == index})} ></li>
+            <li key={index} className={classnames({'select':currentIndex === index})} ></li>
           )
         })
       }

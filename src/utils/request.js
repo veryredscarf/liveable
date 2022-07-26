@@ -40,7 +40,7 @@ const instance = axios.create({
 // 设置请求拦截器.use方法接受两个请求参数
 instance.interceptors.request.use(
   config=>{
-    if(config.method == 'post'){
+    if(config.method === 'post'){
       config.data = qs.stringify(config.data)
     }
     return config
@@ -53,7 +53,7 @@ instance.interceptors.request.use(
 // 设置响应拦截器
 instance.interceptors.response.use(
   res=>{
-    return res.status ==200?Promise.resolve(res):Promise.reject(res)
+    return res.status === 200?Promise.resolve(res):Promise.reject(res)
   },
   error=>{
     const {response} = error

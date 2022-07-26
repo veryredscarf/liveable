@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3544586 */
-  src: url('../fonts/iconfont.woff2?t=1658730894665') format('woff2'),
-       url('../fonts/iconfont.woff?t=1658730894665') format('woff'),
-       url('../fonts/iconfont.ttf?t=1658730894665') format('truetype');
+  src: url('../fonts/iconfont.woff2?t=1658803152168') format('woff2'),
+       url('../fonts/iconfont.woff?t=1658803152168') format('woff'),
+       url('../fonts/iconfont.ttf?t=1658803152168') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,10 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-zuojiantou:before {
+  content: "\e635";
 }
 
 .icon-cart:before {

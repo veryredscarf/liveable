@@ -6,10 +6,17 @@ import "./assets/css/iconfont.css"
 // 引入路由文件
 import AppRouter from './router/index';
 
+import {Provider} from "react-redux"
+import store from "./redux/store/index"
+
 ReactDOM.render(
-  <React.StrictMode>
-    <AppRouter />
+  <Provider store={store}>
+    <React.StrictMode>
+      <AppRouter />
     </React.StrictMode>
+  </Provider>
+
+
   ,
   document.getElementById('root')
 );

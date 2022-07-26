@@ -175,3 +175,20 @@ React ,ReactHook ,ReactRouter ,Redux ,Axios ,Less ,其他插件
     4. 自定义数据来源 server/data文件夹中
 
 ### 首页列表数据显示
+    - 组件分类：
+      - 智能组件（HomeHotList）：处理数据，包含处理数据，过滤数据
+      - 木偶组件（HomeHotView）：试图适配
+    - reactHook useeffect业务分离
+###   实现城市管理
+1. 创建城市管理页面实现路由跳转
+2. 实现路由嵌套，将共享底部导航得页面做成二级路由：layout布局
+3. 城市页面组件效果实现 PublicHeader，currentCity ，cityList
+
+4. 集成redux，通过他来存储城市页面，根据城市不同，UI会渲染不同的结果
+     - redux- Store,  Reducer , Actions
+     - 安装依赖 npm install redux --save     安装redux
+     - 安装依赖 npm install react-redux --save    安装插件使其在react中更加适合
+     - 安装依赖 npm install redux-devtools-extension --save   安装redux插件拓展
+
+     创建redux
+5. 关联Redux,存储城市数据
