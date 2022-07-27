@@ -2,7 +2,6 @@ import React from "react";
 import Item from "./Item/index"
 
 const SearchListView = (props) => {
-  console.log(props.search);
   return (
     <div>
       {

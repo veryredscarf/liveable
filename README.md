@@ -220,4 +220,73 @@ React ,ReactHook ,ReactRouter ,Redux ,Axios ,Less ,其他插件
   - 渲染html结构
   jsx代码：
   <p dangerouslySetInnerHTML={{__html:data.price+"元/月"}}></p>
+7. 搜索头部实现
+    - 通过window.history.back()实现返回功能
+
+8. 实现上拉加载数据功能--组件复用
+    - 上拉加载组件封装
+    - 实现流程
+     1. 监听滚动事件 ---生命周期中
+     2. 判断条件方式1：传统浏览器的方法： 滚动高度（卷入高度）+ 视口高度（正文显示高度）> 容器列表高度
+     2. 判断条件方式2：react中自带方法： getBoundingClientRect() 动态获取距离视口的位置，其中有left，right ，top，bottom属性，
+        分别对应  元素的左边到左边视口的距离 ；元素的右边到左边视口的距离 ；元素的上边对应上边视口的距离 ；元素的下边对应上边视口的距离 
+        注意：上述都是元素的 左边，右边等，表示这些值都不包括元素自身的高度的
+    3. 由于使用滚动监听事件会触发多次，因此我们需要用防抖的方式来
+       参考站点：https://segmentfault.com/a/1190000018428170
+       防抖：在一个期限值内，如果发起多次请求，以最后一次为准
+       节流：在一个期限值内，只发起一次请求
+    4.  产生回调事件，请求搜索更多数据
+
+9. 给searchList组件中的状态依赖使用添加参数，监听地址栏数据，如果变化时，自动调用函数
+  useEffect(()=>{
+    http()
+  },[props.searchContent])
+10. 完成搜索时，同步改变搜索框内容,回退路由时，搜索框中的内容也跟着变化
+    - 利用redux完成
+11. 处理图片资源加载慢时，使用占位图片占位，图片加载完成之后，替换图片
+    - loadImg.js中，
+    处理方法上一些不好的地方：这个图片渲染是啪的一下，全都渲染好了，不是我们想象中一张一张渲染好
+    方案2，也是使用react -懒加载组件的方法来处理数据  参考文档：https://www.csdn.net/tags/OtTaggwsOTc1MTUtYmxvZwO0O0OO0O0O.html
+    首先安装依赖，然后将组件包裹整个展示区域否则会出现文字堆叠的效果
+              <LazyLoad  placeholder={ImgDefault}>
+            <img src={data.img} alt="" />
+            <div className="mask">
+            <div className="left">
+              <p>{data.title}</p>
+              <p>{data.houseType}</p>
+            </div>
+            <div className="right">
+              <div className="btn">
+                {data.rentType}
+              </div>
+              {/* 利用react的api解析并渲染html标签 */}
+              <p dangerouslySetInnerHTML={{__html:data.price+"元/月"}}></p>
+            </div>
+          </div>
+          </LazyLoad>
+
+#### 商品详情页
+1. 创建页面，配置路由
+
+#### MOck.js
+  1. 模拟数据，完全随机化
+   - 用于在搜索数据中
+   - 参考网址  http://mockjs.com/
+  2. 在项目文件夹下安装不是服务器目录安装 安装：npm install mockjs --save 
+
+
+
+
+#### 项目中遇到的问题   
+1. 在文件地址：component/loadMore/index.jsx，我们给滚动刷新添加了一个节流操作
+  - 我的想法是分析判断条件，为什么判断灭有执行这个操作，于是我查询到了在清除定时器的时候，会返回一个值给变量，因此给判断带来干扰
+  - 随后我便清除定时器之后，再将变量设置为null，解决了问题
+2. 但是查看资料说，如果我们的滚动方法定义在useEffect中，我们可以利用useffect缓存的原因来处理这个问题，最开始我们useffect的第二个参数是一个空数组
+    因此useffect只会触发一次，但是如果我们定义成一个可以变化的值，那么useffect会随着数据的改变而不断的刷新
+3. 于是我们使用了useState来储存一个（元素距离顶部的高度）参数， 这个参数的初始值最开始设置为0 ，（设置为0会出现问题的，待会说）
+4. 这样也成功解决了问题
+5. 但是还没有完全结束：最开始我们设置的状态值为0，最后赋值为元素顶部距离视口的高度，这样出现了一个问题，最开始页面时进入页面时触发了事件，
+   - 分析原因可能是因为最开始页面还没有渲染导致判断条件成功判断，于是我们最开始给元素设置一个超大值，让他最开始不满足条件即可。
+
+        
 
