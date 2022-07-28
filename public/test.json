@@ -1,0 +1,457 @@
+{
+  "status": 0,
+  "data": {
+      "films": [{
+          "filmId": 5386,
+          "name": "我的姐姐",
+          "poster": "https://pic.maizuo.com/usr/movie/75c67d58c49822d782561cdcca65189c.jpg",
+          "actors": [{
+              "name": "殷若昕",
+              "role": "导演",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/5c9574f920a21bfea0a35b0557c6dd43.jpg"
+          }, {
+              "name": "张子枫",
+              "role": "安然",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/2bddc157bd0faf6029bbae14ba8d92fc.jpg"
+          }, {
+              "name": "肖央",
+              "role": "舅舅",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/3ce5eeb8f056391d655c2d0a6ec35675.jpg"
+          }, {
+              "name": "金遥源",
+              "role": "弟弟",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/ecda1a57d366c843f28dc68293d4ae63.jpg"
+          }, {
+              "name": "王圣迪",
+              "role": "童年安然",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/a7eb39e0b652da91c4e3a1c1c7a17a85.jpg"
+          }],
+          "director": "殷若昕",
+          "category": "剧情|家庭",
+          "synopsis": "电影讲述失去父母的姐姐在面对追求个人独立生活还是抚养弟弟的问题上展开的一段亲情故事。",
+          "filmType": {
+              "name": "2D",
+              "value": 1
+          },
+          "nation": "中国大陆",
+          "language": "",
+          "videoId": "",
+          "premiereAt": 1617321600,
+          "timeType": 3,
+          "runtime": 127,
+          "grade": "7",
+          "item": {
+              "name": "2D",
+              "type": 1
+          },
+          "isPresale": true,
+          "isSale": false
+      }, {
+          "filmId": 5391,
+          "name": "哥斯拉大战金刚",
+          "poster": "https://pic.maizuo.com/usr/movie/b624c348ee645c004b1e349dbe162ec9.jpg",
+          "actors": [{
+              "name": "亚当·温加德",
+              "role": "导演",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/885b9e96f320408abfc9d172588e753a.jpg"
+          }, {
+              "name": "亚历山大·斯卡斯加德",
+              "role": "Nathan Lind",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/8e6b49c18a8311d8665bf013ea1aa73a.jpg"
+          }, {
+              "name": "米莉·波比·布朗",
+              "role": "Madison Russell",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/c05f1e2481e04f737cd91f4d03c9ff85.jpg"
+          }, {
+              "name": "丽贝卡·豪尔",
+              "role": "Ilene Andrews",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/290e19d60a61ecc877bcd20d1969c599.jpg"
+          }, {
+              "name": "布莱恩·泰里·亨利",
+              "role": "Bernie Hayes",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/323a79599476310db5bde745910857e4.jpg"
+          }],
+          "director": "亚当·温加德",
+          "category": "动作|冒险",
+          "synopsis": "影片中，这两位宛如神衹一般强大的对手于一场壮观的战争中相遇，彼时世界命运正悬于一线。为了找到真正的家园，金刚与他的保护者们踏上了一次艰难的旅程。与他们一道前行的还有一个年轻的孤儿女孩——吉雅，这个女孩与金刚之间存在着一种独特而强大的紧密联系。但意想不到的是，他们在前行的航道上与愤怒的哥斯拉狭路相逢，也由此在全球引起了一系列破坏。一股无形的力量造成了这两只巨兽之间的巨大冲突，深藏在地心深处的奥秘也由此揭开。",
+          "filmType": {
+              "name": "2D",
+              "value": 1
+          },
+          "nation": "美国",
+          "language": "",
+          "videoId": "",
+          "premiereAt": 1616716800,
+          "timeType": 3,
+          "runtime": 113,
+          "grade": "7.2",
+          "item": {
+              "name": "2D",
+              "type": 1
+          },
+          "isPresale": true,
+          "isSale": false
+      }, {
+          "filmId": 4809,
+          "name": "超级的我",
+          "poster": "https://pic.maizuo.com/usr/movie/8b0a1b2f06f1f14a9b31ca9b3f487cbf.jpg",
+          "actors": [{
+              "name": "张翀",
+              "role": "导演",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/48fae2a2621c399b8b591935707e7431.jpg"
+          }, {
+              "name": "王大陆",
+              "role": "桑榆",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/cd3048a1ca8813e8650c24e702fe39f4.jpg"
+          }, {
+              "name": "宋佳",
+              "role": "花儿",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/31ed926ebf31343806b3febf0dfe16c8.jpg"
+          }, {
+              "name": "曹炳琨",
+              "role": "三哥",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/cd325280c19f862d5dd813185b106e34.jpg"
+          }, {
+              "name": "吴刚",
+              "role": "强哥",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/ef2b37015091a9effef8022420bae582.jpg"
+          }],
+          "director": "张翀",
+          "category": "奇幻|冒险",
+          "synopsis": "如果睡觉能赚钱，如果做梦能致富，但是要付出代价，你加入吗？18线小编剧桑榆（王大陆 饰）原本生活困顿拮据，但一夜之间却拥有了梦中取物的神奇能力，通过将梦中的宝物变现，潦倒落魄的他成为人生赢家，甚至一掷千金追求到暗恋多年的花儿（宋佳 饰），然而在梦中快意掠取的桑榆却逐渐发现，这场躺赢美梦竟将他的生活推向了失控的边缘……",
+          "filmType": {
+              "name": "2D",
+              "value": 1
+          },
+          "nation": "中国大陆",
+          "language": "",
+          "videoId": "XNDE5Mzk5NzIyNA==",
+          "premiereAt": 1617926400,
+          "timeType": 3,
+          "runtime": 103,
+          "grade": "7.8",
+          "item": {
+              "name": "2D",
+              "type": 1
+          },
+          "isPresale": true,
+          "isSale": false
+      }, {
+          "filmId": 5407,
+          "name": "工作细胞：细胞大作战",
+          "poster": "https://pic.maizuo.com/usr/movie/76cdacad497e4e018063cd6e6d130183.jpg",
+          "actors": [{
+              "name": "小仓宏文",
+              "role": "导演",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/94d61746865c06af84d210cb262ea7b6.jpg"
+          }, {
+              "name": "花泽香菜",
+              "role": "红细胞",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/ea4d79a56f420c3117fbe19f7bab9d7b.jpg"
+          }, {
+              "name": "前野智昭",
+              "role": "白细胞（中性粒细胞）",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/6632ed12f6e6c32a2592c1e67c323e2b.jpg"
+          }, {
+              "name": "小野大辅",
+              "role": "杀伤性T细胞",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/85f86fbee04986a564c2b50bdbff9270.jpg"
+          }, {
+              "name": "井上喜久子",
+              "role": "巨噬细胞",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/69cd52285015b885953c9962523ae99f.jpg"
+          }],
+          "director": "小仓宏文",
+          "category": "动画|喜剧|动作",
+          "synopsis": "这是人类的体内。许许多多的细胞勤奋工作的世界。某日白细胞（中性粒细胞）与红细胞，遇见了收留迷路乳酸菌的一般细胞。为了将乳酸菌护送至同伴身边，白细胞(中性粒细胞)与一般细胞向肠道出发。然而他们却与来者不善的最强敌人重逢。「我和你们到底谁才是正义的一方，趁这次弄个清楚吧」再次现身的癌细胞。以及遭到坏菌破坏的肠内环境。体内遭遇前所未有的大危机！束手就擒吧 癌细胞！为了守护这个世界，白细胞们（中性粒细胞）向赌上世界命运的大战发起挑战。",
+          "filmType": {
+              "name": "2D",
+              "value": 1
+          },
+          "nation": "日本",
+          "language": "",
+          "videoId": "",
+          "premiereAt": 1617926400,
+          "timeType": 3,
+          "runtime": 111,
+          "grade": "7.9",
+          "item": {
+              "name": "2D",
+              "type": 1
+          },
+          "isPresale": true,
+          "isSale": false
+      }, {
+          "filmId": 5357,
+          "name": "第十一回",
+          "poster": "https://pic.maizuo.com/usr/movie/1856a6776dcc5c584d0fa5addfe8b31a.jpg",
+          "actors": [{
+              "name": "陈建斌",
+              "role": "导演",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/1163f4bafab6e8c6a3e61d3232b4a7f6.jpg"
+          }, {
+              "name": "陈建斌",
+              "role": "马福礼",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/1163f4bafab6e8c6a3e61d3232b4a7f6.jpg"
+          }, {
+              "name": "窦靖童",
+              "role": " 金多多",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/e2c907d39cc34827ed9c0a3bd64f9229.jpg"
+          }, {
+              "name": "周迅",
+              "role": "金财铃",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/6fb381b4c06fb69405f37e5ec56e3962.jpg"
+          }, {
+              "name": "大鹏",
+              "role": "胡昆汀",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/658eeb558bcaead96e7783e70dc6d79a.jpg"
+          }],
+          "director": "陈建斌",
+          "category": "剧情|喜剧|家庭",
+          "synopsis": "30年前一桩杀人案，被市话剧团拿来改编成舞台剧，马福礼（陈建斌 饰）作为杀人案的当事人，旧事重提让他的生活再起波澜。马福礼一边忙着和话剧团导演胡昆汀（大鹏 饰）纠缠掰理，一边找律师翻案寻求真相还自己清白，还要忙着调和妻子金财铃（周迅 饰）和女儿金多多（窦靖童 饰）剑拔弩张的关系，生活给了他多记重锤……时隔多年，马福礼能否重新翻案？真相到底有几个？人生如戏，请君入席。",
+          "filmType": {
+              "name": "2D",
+              "value": 1
+          },
+          "nation": "中国大陆",
+          "language": "",
+          "videoId": "",
+          "premiereAt": 1614902400,
+          "timeType": 3,
+          "runtime": 115,
+          "grade": "7.9",
+          "item": {
+              "name": "2D",
+              "type": 1
+          },
+          "isPresale": true,
+          "isSale": false
+      }, {
+          "filmId": 5406,
+          "name": "西游记之再世妖王",
+          "poster": "https://pic.maizuo.com/usr/movie/5ef4d65ca1412e90d817fad27dd43b8c.jpg",
+          "actors": [{
+              "name": "张磊",
+              "role": "元蒂",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/667c724a99e9b11930d14045b915bd3b.jpg"
+          }, {
+              "name": "蔡海婷",
+              "role": "果子",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/acc7a7fea7c11fadeed4c92651230337.jpg"
+          }, {
+              "name": "王云飞",
+              "role": "导演",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/147a09cab083f484cc9c16f70f6a19c5.jpg"
+          }, {
+              "name": "边江",
+              "role": "孙悟空",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/0026bb1df2a92fc4993762d539127996.jpg"
+          }, {
+              "name": "苏尚卿",
+              "role": "唐僧",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/d6f4f3f7bf4d8b116a33483f6123944a.jpg"
+          }],
+          "director": "王云飞",
+          "category": "动画|奇幻|动作",
+          "synopsis": "混沌初开之时，世上的第一只妖诞生，名元蒂，被奉为妖祖。千百万年后，昔日妖王孙悟空被唐僧从五行山下救出，一同前往西天取经。而传说中的妖祖元蒂这时再次出现，三界岌岌可危。两代妖王注定终极一战，但这次孙悟空遇上的，是前所未见的劲敌!",
+          "filmType": {
+              "name": "4D",
+              "value": 13
+          },
+          "nation": "中国大陆",
+          "language": "",
+          "videoId": "",
+          "premiereAt": 1617321600,
+          "timeType": 3,
+          "runtime": 95,
+          "grade": "7.3",
+          "item": {
+              "name": "4D",
+              "type": 13
+          },
+          "isPresale": true,
+          "isSale": false
+      }, {
+          "filmId": 5426,
+          "name": "名侦探柯南：绯色的子弹",
+          "poster": "https://pic.maizuo.com/usr/movie/0e2d1f1b4157eebe8048be8e51226488.jpg",
+          "actors": [{
+              "name": "小山力也",
+              "role": "毛利小五郎",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/d63c79ae907b2adee52557203463b986.jpg"
+          }, {
+              "name": "高山南",
+              "role": "江户川柯南",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/ea672c1dc28becbf6649789a9f61f3da.jpg"
+          }, {
+              "name": "山崎和佳奈",
+              "role": "毛利兰",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/c14bd5ece2606acf9ebb438463f9516e.jpg"
+          }, {
+              "name": "永冈智佳",
+              "role": "导演",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/a7f893c1a679c6ee466d3f8be8202734.jpg"
+          }, {
+              "name": "高山南",
+              "role": "演员",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/ea672c1dc28becbf6649789a9f61f3da.jpg"
+          }],
+          "director": "永冈智佳",
+          "category": "动作|动画|悬疑",
+          "synopsis": "全球最⼤体育盛事WSG即将在东京举办开幕式，届时，融合⽇本先进技术打造的最⾼时速可达1000km的 “真空超电导磁悬浮”也即将通车。在这个万众瞩⽬的关头，汇集WSG知名赞助商的酒会现场遇到了突 发事件，知名企业的⾼官接连遭到绑架，列车启动仪式现场也出现了意外。根据柯南的推理，本次事件也 许与⼗五年前在美国波⼠顿发⽣的WSG绑架事件有关。这真的是偶然吗？在各国游客聚集的⽇本到底会发⽣什么样的事件？真空超导磁悬浮启动之时，“危险⼀  家⼈”终于集结！",
+          "filmType": {
+              "name": "2D",
+              "value": 1
+          },
+          "nation": "日本",
+          "language": "",
+          "videoId": "",
+          "premiereAt": 1618617600,
+          "timeType": 3,
+          "runtime": 112,
+          "item": {
+              "name": "2D",
+              "type": 1
+          },
+          "isPresale": true,
+          "isSale": false
+      }, {
+          "filmId": 5382,
+          "name": "阿凡达",
+          "poster": "https://pic.maizuo.com/usr/movie/ab016b8e41bdefb2ec243b7b63b105eb.jpg",
+          "actors": [{
+              "name": "詹姆斯·卡梅隆",
+              "role": "导演",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/5b3dc4edc3f8e6b9349e675c4a4f1f36.jpg"
+          }, {
+              "name": "萨姆·沃辛顿",
+              "role": "杰克·萨利 Jake Sully",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/07cdf5caf00077f1a7ac89f4ee751ed7.jpg"
+          }, {
+              "name": "佐伊·索尔达娜",
+              "role": "涅提妮 Neytiri",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/6dc7419536014674d57e64aacd08e4f1.jpg"
+          }, {
+              "name": "米歇尔·罗德里格兹",
+              "role": "楚蒂·查肯 Trudy Chacon",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/79b58ac3a0907d4e92a9a60ab80445bc.jpg"
+          }, {
+              "name": "西格妮·韦弗",
+              "role": "格蕾丝博士 Dr. Grace Augustine",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/0cc01ad45e1548dfb35229973462b14e.jpg"
+          }],
+          "director": "詹姆斯·卡梅隆",
+          "category": "动作|科幻|冒险",
+          "synopsis": "战斗中负伤而下身瘫痪的前海军战士杰克·萨利（萨姆·沃辛顿 饰）决定替死去的同胞哥哥到潘多拉星控操纵格蕾丝博士（西格妮·韦弗 饰）用人类基因与当地纳美部族基因结合创造出的“阿凡达“混血生物。”杰克的目的是打入纳美部落，外交说服他们自愿离开世代居住的家园，从而SecFor公司可砍伐殆尽该地区的原始森林，开采地下昂贵的“不可得”矿。在探索潘多拉星的过程中，杰克遇到了纳美部落的公主娜蒂瑞（佐伊·索尔达娜饰），向她学习了纳美人的生存技能与对待自然的态度。与此同时，SecFor公司的经理和军方代表上校迈尔斯（史蒂芬·朗 饰）逐渐丧失耐心，决定诉诸武力驱赶纳美人。",
+          "filmType": {
+              "name": "3D",
+              "value": 2
+          },
+          "nation": "美国,英国",
+          "language": "",
+          "videoId": "",
+          "premiereAt": 1615507200,
+          "timeType": 3,
+          "runtime": 162,
+          "grade": "7",
+          "item": {
+              "name": "3D",
+              "type": 2
+          },
+          "isPresale": true,
+          "isSale": false
+      }, {
+          "filmId": 5378,
+          "name": "波斯语课",
+          "poster": "https://pic.maizuo.com/usr/movie/3be1740bd63b5d0c6edb2ec6a5723e07.jpg",
+          "actors": [{
+              "name": "瓦迪姆·佩尔曼",
+              "role": "导演",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/ce502f22d5702b5238f070d13b6eeffc.jpg"
+          }, {
+              "name": "纳威尔·佩雷兹·毕斯卡亚特",
+              "role": "Gilles",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/f1b739172cc8d638856d39f917eb5987.jpg"
+          }, {
+              "name": "拉斯·艾丁格",
+              "role": "Klaus Koch",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/df5e50e17c0ef9cb0e917eba4efb34f4.jpg"
+          }, {
+              "name": "尼克·迈瑞莱格伦",
+              "role": "演员",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/650b882ab9f375724242e0515b659259.jpg"
+          }, {
+              "name": "约纳斯·奈伊",
+              "role": "Max",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/9c78351880ee62daf13603dd39728814.jpg"
+          }],
+          "director": "瓦迪姆·佩尔曼",
+          "category": "剧情",
+          "synopsis": "二战期间，犹太人小卷在集中营谎称自己是波斯人保命，被一位德国军官看中要求教自己波斯语。对波斯语完全不懂的小卷只能凭空编出一门语言，他开始用集中营中关押的犹太人的名字作为词根，编造出上千个“波斯语”单词，军官在残暴的环境中对小卷竟有了依赖，并开始袒护他，不料集中营中来了一个真正的波斯人……",
+          "filmType": {
+              "name": "2D",
+              "value": 1
+          },
+          "nation": "俄罗斯,德国,白俄罗斯",
+          "language": "",
+          "videoId": "",
+          "premiereAt": 1616112000,
+          "timeType": 3,
+          "runtime": 127,
+          "grade": "7.2",
+          "item": {
+              "name": "2D",
+              "type": 1
+          },
+          "isPresale": true,
+          "isSale": false
+      }, {
+          "filmId": 5335,
+          "name": "你好，李焕英",
+          "poster": "https://pic.maizuo.com/usr/movie/3f97c0ef0eca443b9307fad1c05c188e.jpg",
+          "actors": [{
+              "name": "贾玲",
+              "role": "导演",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/577c7d72a1908638a805b4be88aeb791.jpg"
+          }, {
+              "name": "贾玲",
+              "role": "贾晓玲",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/577c7d72a1908638a805b4be88aeb791.jpg"
+          }, {
+              "name": "张小斐",
+              "role": "李焕英",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/8e7578d4cae429675760aa74f5cc3da9.jpg"
+          }, {
+              "name": "沈腾",
+              "role": "沈光林",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/98c43da4b43bcf161d5b9c905253c016.jpg"
+          }, {
+              "name": "陈赫",
+              "role": "演员",
+              "avatarAddress": "https://pic.maizuo.com/usr/movie/4601fb466d358df29886c566a76808f8.jpg"
+          }],
+          "director": "贾玲",
+          "category": "喜剧|剧情",
+          "synopsis": "2001年的某一天，刚刚考上大学的贾晓玲（贾玲 饰）经历了人生中的一次大起大落。一心想要成为母亲骄傲的她却因母亲突遭严重意外，而悲痛万分。在贾晓玲情绪崩溃的状态下，竟意外的回到了 1981 年，并与年轻的母亲李焕英（张小斐 饰）相遇，二人形影不离，宛如闺蜜。与此同时，也结识了一群天真善良的好朋友。晓玲以为来到了这片“广阔天地”，她可以凭借自己超前的思维，让母亲“大有作为”，但结果却让晓玲感到意外......",
+          "filmType": {
+              "name": "2D",
+              "value": 1
+          },
+          "nation": "中国大陆",
+          "language": "",
+          "videoId": "",
+          "premiereAt": 1613088000,
+          "timeType": 3,
+          "runtime": 128,
+          "grade": "7.4",
+          "item": {
+              "name": "2D",
+              "type": 1
+          },
+          "isPresale": true,
+          "isSale": false
+      }],
+      "total": 51
+  },
+  "msg": "ok"
+}

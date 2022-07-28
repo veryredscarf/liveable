@@ -11,7 +11,8 @@ const base = {
   homehot2:"/api/home/hot2",
   search:"/api/search",
   details:"/api/details",
-  login:"/api/login"
+  login:"/api/login",
+  comment:"/api/comment"
 
 }
 /***
@@ -55,6 +56,13 @@ const api ={
   setLogin(params){
     return axios.post(base.baseUrl+base.login,params)
   },
+    /**
+   * 获取用户信息
+   */
+  getComment(params){
+    return axios.get(base.baseUrl+base.comment,{params})
+  },
+
 
 
 }

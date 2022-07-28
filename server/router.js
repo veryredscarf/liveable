@@ -4,7 +4,9 @@ const homehot = require("./data/home/homehot")
 const url = require("url")
 const searchData = require("./data/search/index")
 const details = require("./data/details/index")
+const commentData = require("./data/comment/index")
 const bodyParser = require("body-parser")
+
 
 
 // 引入mock
@@ -127,6 +129,26 @@ router.post("/login",(req,res)=>{
     res.send({
       status:401,
       msg:"搞锤子，用户名和密码错误"
+    })
+  }
+})
+
+/**
+ * 获取评论信息
+ */
+
+
+router.get("/comment",(req,res)=>{
+  const id = url.parse(req.url,true).query.id
+  if(id){
+    res.send({
+      status:200,
+      result:commentData
+    })
+  }else{
+    res.send({
+      status:403,
+      msg:"商品ID都没有,想要啥评论呢？"
     })
   }
 })

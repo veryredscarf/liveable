@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import "./style.less"
 
 /***
@@ -6,15 +6,19 @@ import "./style.less"
  */
 
 const Tabs = (props) =>{
-  function tabClickHandle(){
-
+  const  [ currentIndex,setcurrentIndex] = useState(0)
+  function tabClickHandle(index){
+    setcurrentIndex(index)
+  }
+  function tabActiveHandle(index){
+    return currentIndex === index ? "Tab_title active" : "Tab_title"
   }
   return (
     <div>
       <ul className="Tab_title_wrap">
         {
           React.Children.map(props.children,(element,index)=>{
-             return <li onClick={tabClickHandle} className="Tab_title" key={index}>{element.props.label}</li>
+             return <li onClick={()=>tabClickHandle(index)} className={tabActiveHandle(index)} key={index}>{element.props.label}</li>
           })
         }
         
@@ -25,7 +29,7 @@ const Tabs = (props) =>{
           React.Children.map(props.children,(element,index) =>{
             return(
               <div>
-                {element.props.children}
+                {currentIndex === index? element.props.children:""}
               </div>
             )
           })

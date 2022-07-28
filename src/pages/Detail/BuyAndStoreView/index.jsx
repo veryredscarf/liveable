@@ -1,19 +1,36 @@
-import React ,{useState,useEffect}from "react"
+import React ,{useState,useEffect,useContext}from "react"
 import { withRouter } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import * as collectActions from "../../../redux/actions/collect"
+
+
+// import {GoodContext} from '../../Detail/index'
+
 import "./style.less"
+
 
 const BuyAndStoreView = (props) =>{
 
+  // console.log(GoodContext,1);
+
+  // const name = useContext(GoodContext) 
+  // console.log(name);
+  // useEffect(()=>{
+  //   console.log(name);
+  // },[name])
+
+
+
 
   const dispatch = useDispatch()
-  const [ isCollect,setisCollect] = useState(true)
+  const [ isCollect,setisCollect] = useState(false)
 
   // 在页面初始化渲染之后，便根据商品数据查询用户收藏信息,从而显示在页面上数据
   useEffect(()=>{
     setisCollect(isStore())
   },[])
+
+  console.log(isCollect);
 
   function clickStoreHnadle(){
     // 判断上一个组件传来的用户信息参数
@@ -21,13 +38,16 @@ const BuyAndStoreView = (props) =>{
     if(props.user.user.token){
       // 二次判断用户是否收藏，如果收藏了，则取消收藏，如果没有收藏，则取消收藏
       if(isStore()){
-        // 已经收藏
-        setisCollect(true)
+        // 取消收藏
+        console.log(22222222);
+        setisCollect(false)
         dispatch(collectActions.removeCollect(props.id))
 
+
       }else{
-        // 没有收藏
-        setisCollect(false)
+        // 已经收藏
+        console.log(11111);
+        setisCollect(true)
         dispatch(collectActions.setCollect(props.id))
 
       }
@@ -46,10 +66,11 @@ const BuyAndStoreView = (props) =>{
       function isStore(){
         let collect = props.collect
         let id = props.id
+          console.log(id);
+          console.log(collect);
+
         // 数组的some方法，只要有一个元素符合条件则返回true，否则返回false
-        return collect.some(item =>{
-          return item === id
-        })
+        return collect.some(item => item ===id)
     }
 
 
@@ -57,7 +78,7 @@ const BuyAndStoreView = (props) =>{
     <div className="buy-sotre-container clear-fix">
       <div className="item-container float-left">
          {
-          isCollect ?
+          !isCollect ?
             <button onClick={clickStoreHnadle} className="selected">收藏</button>:
             <button onClick={clickStoreHnadle} className = "selected o">已收藏</button>
         }

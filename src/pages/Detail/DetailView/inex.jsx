@@ -3,6 +3,7 @@ import DetailHeader from "../../../component/PublicHeader/index"
 import Swiper from "../../../component/swiper/index"
 import BuyAndStore from "../BuyAndStore";
 import Tabs from "../../../component/Tabs";
+import Comment from "../Comment";
 import "./style.less"
 
 const DetailView =(props) =>{
@@ -52,7 +53,7 @@ const DetailView =(props) =>{
             </div>
 
             <div label ="评价">
-              <p>我是评价</p>
+               <Comment id = {props.id}></Comment>
             </div>
           </Tabs>
 

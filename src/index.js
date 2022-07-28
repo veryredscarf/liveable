@@ -8,11 +8,13 @@ import AppRouter from './router/index';
 
 import {Provider} from "react-redux"
 import store from "./redux/store/index"
+import Test from "./test/test1"
 
 ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>
       <AppRouter />
+      {/* <Test/> */}
     </React.StrictMode>
   </Provider>
 
