@@ -11,10 +11,8 @@ const LoadMore =(props)=>{
     // 4.1 定义定时器变量 --定义防抖
     let timer = null
 
-    // 1. 添加滚动事件
-    window.addEventListener("scroll",()=>{
-      // 3. 通过非受控组件来获取元素,并且获取元素距离视口的距离
-
+    function scrollHnadle(){
+     // 3. 通过非受控组件来获取元素,并且获取元素距离视口的距离
       if(loadMore.current){
         setloadTop(loadMore.current.getBoundingClientRect().top)
         // 4.2 处理防抖
@@ -30,10 +28,20 @@ const LoadMore =(props)=>{
             },300)
           }
       }
-    })
-
+    }
+    // 1. 添加滚动事件
+    window.addEventListener("scroll",scrollHnadle)
+    // 在回掉函数中，添加清除定时器以及取消滚动事件
+    return ()=>{
+      // // 取消滚动事件
+      // window.removeEventListener("scroll",scrollHnadle)
+      // clearTimeout(timer)
+    }
   
   },[loadTop])
+
+
+
   // 方案2
   // useEffect(()=>{
   //   // 2. 获取视口高度

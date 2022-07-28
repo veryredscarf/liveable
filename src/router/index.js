@@ -8,6 +8,7 @@ import BottomNav from '../component/bottomNav'
 import City from "../pages/City/index"
 import Search from "../pages/Search/index"
 import Detail from '../pages/Detail'
+import Login from "../pages/Login/index"
 
 import Layout from "../pages/Main/layout"
 
@@ -19,6 +20,7 @@ const AppRouter = ()=>{
         <Route path='/city' component={City} />
         <Route path='/detail/:id' component={Detail} />
         <Route path='/search/:keywords' component={Search} />
+        <Route path='/login' component={Login} />
         
         <Layout>
           <BottomNav/>

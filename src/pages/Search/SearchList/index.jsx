@@ -12,6 +12,11 @@ const SearchList = (props) => {
   // 通过判断props.searchContent值的变化来不断请求新的数据，从而实现搜索功能
   useEffect(()=>{
     http()
+    // 设置返回箭头函数到达恢复状态的效果，在组件卸载前清空状态
+    return () => {
+      setsearchData([])
+      sethasMore(false)
+    }
   },[props.searchContent])
 
   // 监听loadmore组件回传的事件函数

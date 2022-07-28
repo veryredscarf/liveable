@@ -3,9 +3,14 @@ const router = express.Router()
 const homehot = require("./data/home/homehot")
 const url = require("url")
 const searchData = require("./data/search/index")
+const details = require("./data/details/index")
+const bodyParser = require("body-parser")
+
+
 // 引入mock
 const Mock = require("mockjs")
 const { Random } = require("mockjs")
+
 
 
 
@@ -92,5 +97,38 @@ router.get("/mock",(req,res)=>{
   })
 })
 
+
+/***
+ * 详情页面数据
+ */
+
+router.get("/details",(req,res)=>{
+  const id  = url.parse(req.url,true).query.id
+  console.log(id);
+  res.send({
+    status:200,
+    result:details
+  })
+})
+
+/***
+ * post传参   ---登录功能
+ */
+
+router.post("/login",(req,res)=>{
+  const {usename,password} = req.body
+  if(usename&&password){
+    res.send({
+      status:200,
+      token:"hudfuhsufhoua;fdqur.eoqworujoisohaugi;ugcyauysmmLkzjxoilkpopw",
+      nick:Random.csentence(5,7)
+    })
+  }else{
+    res.send({
+      status:401,
+      msg:"搞锤子，用户名和密码错误"
+    })
+  }
+})
 
 module.exports = router

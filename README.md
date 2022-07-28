@@ -267,6 +267,52 @@ React ,ReactHook ,ReactRouter ,Redux ,Axios ,Less ,其他插件
 
 #### 商品详情页
 1. 创建页面，配置路由
+2. 收藏功能
+ - 收藏功能是否收藏，取决于用户是否登录，用户登录点击时可以收藏，未收藏时，则跳转到登陆界面
+ - 判定用户是否登录：这个取决于token，令牌
+
+
+####  登录功能
+1. 完成后端接口的实现
+2. 在登录页面中，将登录后的请求到的数据，通过事件回传的方式返回给上一级组件，完成在redux中的数据存储
+3. 验证 ：安装登录表单验证插件  validator  和   lodash/isEmpty 和classnames
+4. 完成验证文件配置，并且导出  util/validator.js中
+
+
+#### 使用React.children这个api，这个api通常用于复用组件中的相同节点 ，如果一个tab栏，里面的每一个tab块都有一个列表元素，如此有N个相仿的tab块
+      1. 这种场景下我们就想要能够循环复用我们的节点，避免写过多的代码，正常情况下我们觉得一个数组循环便可以处理这个问题，通过this.props.children
+         but  props.children这个值，如果只有一个节点时，他是对象，没有节点时他是undefined，如果多个节点，他就是数组，因此使用循环便非常的麻烦，but呢，我们可以通过React.Children.map（或者其他方法）来遍历，即使不是对象也不会报错
+      2. 然后我们只需要在合适的页面引入Tabs组件，并进行嵌套便可以实现 具体看component/Tab/index.jsx  和src/pages/Deatil/DeatilView/index.jsx 
+      3. 注意通过这种方式来读取数据时，会出现一个问题，也就是读取数据的div会被干掉 即Tab组件包裹的第一层div会被干掉
+ 
+
+
+#### 处理内存泄漏问题
+
+index.js:1 Warning: Can't perform a React state update on an unmounted component. This is a no-op, but it indicates a memory leak in your application. To fix, cancel all subscriptions and asynchronous tasks in a useEffect cleanup function.
+
+   1. 在react中有  持续事件（如滚动事件，点击事件不算），定时器，网络请求，这三件情况中存在内存泄露的问题
+   2. 如此处在滚动事件中，滚动事件还没有执行完成之前便跳转到其他的页面中，如我们在列表场景中设置了一个事件，当时我们在监听滚动事件，并且在滚动事件中
+      注入了网络请求方法，当我们在点击跳转到其他页面的时候，页面已经被卸载了，但是会有数据返回已经事件监听可能还没有完全消失，所有存在了内存泄露的情况。
+      处理泄露的问题：因此我们需要在页面卸载之前，取消网络请求和事件取消，定时器清除这些操作。
+3. 在搜索列表页，我们在定义了滚动事件之后，也就清除了滚动事件，这样避免了滚动事件带来了内存泄漏，同时由于取消滚动事件必须要有同名执行函数，因此将
+    函数从箭头函数换成了传统函数,并且清除定时器
+        return ()=>{
+      // 取消滚动事件
+      window.removeEventListener("scroll",scrollHnadle)
+      clearTimeout(timer)
+    }
+
+  
+
+4. 在搜索列表页 ，由网络请求带来的内存泄漏处理：返回一个箭头函数，并且在组件卸载之前清空状态
+    useEffect(()=>{
+        http()
+        return () => {
+          searchData([])
+          sethasMore(false)
+        }
+      },[props.searchContent])
 
 #### MOck.js
   1. 模拟数据，完全随机化
@@ -287,6 +333,7 @@ React ,ReactHook ,ReactRouter ,Redux ,Axios ,Less ,其他插件
 4. 这样也成功解决了问题
 5. 但是还没有完全结束：最开始我们设置的状态值为0，最后赋值为元素顶部距离视口的高度，这样出现了一个问题，最开始页面时进入页面时触发了事件，
    - 分析原因可能是因为最开始页面还没有渲染导致判断条件成功判断，于是我们最开始给元素设置一个超大值，让他最开始不满足条件即可。
+6. 
 
         
 

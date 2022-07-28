@@ -9,7 +9,10 @@ const base = {
   baseUrl:"http://localhost:5566",
   homehot1:"/api/home/hot1",
   homehot2:"/api/home/hot2",
-  search:"/api/search"
+  search:"/api/search",
+  details:"/api/details",
+  login:"/api/login"
+
 }
 /***
  * 请求方法
@@ -23,6 +26,9 @@ const api ={
       params
     })
   },
+   /***
+   * 获取首页热门产品2
+   */
   getHomeHot2(params){
     return axios.get(base.baseUrl+base.homehot2,{
       params
@@ -34,7 +40,23 @@ const api ={
    */
   getSearchData(params){
     return axios.get(base.baseUrl+base.search,{params})
-  }
+  },
+
+    /***
+   * 获取详情内容数据
+   */
+  getDetailsData(params){
+    return axios.get(base.baseUrl+base.details,{params})
+  },
+
+    /***
+   * 登录功能数据
+   */
+  setLogin(params){
+    return axios.post(base.baseUrl+base.login,params)
+  },
+
+
 }
 
 export default api
