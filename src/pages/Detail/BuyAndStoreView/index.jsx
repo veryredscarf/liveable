@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux"
 import * as collectActions from "../../../redux/actions/collect"
 
 
-// import {GoodContext} from '../../Detail/index'
+import {GoodContext} from '../../Detail/index'
 
 import "./style.less"
 
@@ -13,8 +13,8 @@ const BuyAndStoreView = (props) =>{
 
   // console.log(GoodContext,1);
 
-  // const name = useContext(GoodContext) 
-  // console.log(name);
+  const name = useContext(GoodContext) 
+  console.log("11111111111111111111111111111",name);
   // useEffect(()=>{
   //   console.log(name);
   // },[name])

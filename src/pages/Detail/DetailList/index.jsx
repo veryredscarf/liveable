@@ -1,8 +1,8 @@
-import React ,{ useEffect,useState,}from "react";
+import React ,{ useEffect,useState,createContext}from "react";
 import api from "../../../api/index"
-
 import DetailView from "../DetailView/inex";
 
+// export const GoodContext = createContext(null)
 
 const DetailList = (props) =>{
 
@@ -18,6 +18,7 @@ const DetailList = (props) =>{
     })
   },[])
   return (
+    // <GoodContext.Provider  value={1}>
     <div>
       {
          DetailData.imgs?
@@ -26,6 +27,7 @@ const DetailList = (props) =>{
         
       }
     </div>
+    // </GoodContext.Provider>
   )
 }
 

@@ -3,8 +3,8 @@ import { useParams } from "react-router-dom";
 import DetailList from "./DetailList";
 // 使用
 
-export const GoodContext = React.createContext()
 
+export const GoodContext = createContext(null)
 
 
 const Detail = ()=>{
@@ -13,10 +13,9 @@ const Detail = ()=>{
   console.log(params.id);
   return (
     <div>
-      {/* <GoodContext value={{name:"1"}}> */}
+      <GoodContext.Provider  value={1}>
         <DetailList id = {params.id}></DetailList>
-      {/* </GoodContext> */}
-        
+      </GoodContext.Provider>
 
     </div>
   )

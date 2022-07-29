@@ -1,10 +1,12 @@
-import React ,{useEffect,useState} from 'react'
+import React ,{useEffect,useState,createContext} from 'react'
 import CommentView from "./CommentView/index"
 import api from "../../../api/index"
 import LoadMore from "../../../component/loadMore/index"
 import "./style.less"
 
+
 function Comment(props) {
+
   const [comment,setcomment] = useState([])
   const [hasmore,setHasmore] = useState(false)
   useEffect(()=>{
@@ -30,6 +32,7 @@ function Comment(props) {
     })
   }
   return (
+  
     <div>
       {
         comment.length>0?
