@@ -321,6 +321,10 @@ index.js:1 Warning: Can't perform a React state update on an unmounted component
   2. 在项目文件夹下安装不是服务器目录安装 安装：npm install mockjs --save 
 
 
+#### 订单评价
+1.  订单页面，路由跳转
+
+
 
 
 #### 项目中遇到的问题   

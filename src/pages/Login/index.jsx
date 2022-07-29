@@ -7,7 +7,10 @@ const Login = () =>{
   const dispatch = useDispatch()
 
   function onLoginEventListen(userData){
+    // 往redux中存储数据
     dispatch(loginAction.setLogin(userData))
+    // 也把用户信息存储在本地
+    localStorage.setItem("goodlive",JSON.stringify(userData))
     window.history.back()
   }
   return (

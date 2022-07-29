@@ -31,5 +31,69 @@ module.exports = [
         rentType: "整租",
         commentState: 2,
         img: "http://iwenwiki.com/api/livable/shop/z6.jpg"
-    }
+    },
+    {
+        id: Math.random().toString().slice(2),
+        title: "整租 · 杨庄北区2居室-南北",
+        houseType: "1室1厅1卫 - 48m²",
+        price: "4300",
+        rentType: "整租",
+        commentState: 0,
+        img: "http://iwenwiki.com/api/livable/shop/z6.jpg"
+    },
+    {
+        id: Math.random().toString().slice(2),
+        title: "整租 · 杨庄北区2居室-南北",
+        houseType: "1室1厅1卫 - 48m²",
+        price: "4300",
+        rentType: "整租",
+        commentState: 0,
+        img: "http://iwenwiki.com/api/livable/shop/z6.jpg"
+    },
+    {
+        id: Math.random().toString().slice(2),
+        title: "整租 · 杨庄北区2居室-南北",
+        houseType: "1室1厅1卫 - 48m²",
+        price: "4300",
+        rentType: "整租",
+        commentState: 2,
+        img: "http://iwenwiki.com/api/livable/shop/z6.jpg"
+    },
+    {
+        id: Math.random().toString().slice(2),
+        title: "整租 · 杨庄北区2居室-南北",
+        houseType: "1室1厅1卫 - 48m²",
+        price: "4300",
+        rentType: "整租",
+        commentState: 2,
+        img: "http://iwenwiki.com/api/livable/shop/z6.jpg"
+    },
+    {
+        id: Math.random().toString().slice(2),
+        title: "整租 · 杨庄北区2居室-南北",
+        houseType: "1室1厅1卫 - 48m²",
+        price: "4300",
+        rentType: "整租",
+        commentState: 2,
+        img: "http://iwenwiki.com/api/livable/shop/z6.jpg"
+    },
+    {
+        id: Math.random().toString().slice(2),
+        title: "整租 · 杨庄北区2居室-南北",
+        houseType: "1室1厅1卫 - 48m²",
+        price: "4300",
+        rentType: "整租",
+        commentState: 0,
+        img: "http://iwenwiki.com/api/livable/shop/z6.jpg"
+    },
+    {
+        id: Math.random().toString().slice(2),
+        title: "整租 · 杨庄北区2居室-南北",
+        houseType: "1室1厅1卫 - 48m²",
+        price: "4300",
+        rentType: "整租",
+        commentState: 0,
+        img: "http://iwenwiki.com/api/livable/shop/z6.jpg"
+    },
+
 ]

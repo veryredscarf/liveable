@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3544586 */
-  src: url('../fonts/iconfont.woff2?t=1658938329874') format('woff2'),
-       url('../fonts/iconfont.woff?t=1658938329874') format('woff'),
-       url('../fonts/iconfont.ttf?t=1658938329874') format('truetype');
+  src: url('../fonts/iconfont.woff2?t=1659074998694') format('woff2'),
+       url('../fonts/iconfont.woff?t=1659074998694') format('woff'),
+       url('../fonts/iconfont.ttf?t=1659074998694') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,26 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-map:before {
+  content: "\e786";
+}
+
+.icon-Star:before {
+  content: "\e6c3";
+}
+
+.icon-Star-copy:before {
+  content: "\eae7";
+}
+
+.icon-star:before {
+  content: "\e6ee";
+}
+
+.icon-icon_user:before {
+  content: "\e6b3";
 }
 
 .icon-yuechi:before {

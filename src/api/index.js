@@ -12,7 +12,9 @@ const base = {
   search:"/api/search",
   details:"/api/details",
   login:"/api/login",
-  comment:"/api/comment"
+  comment:"/api/comment",
+  orderComment:"/api/order/comment",
+  orderCommentSubmit:"/api/order/submit/comment"
 
 }
 /***
@@ -61,6 +63,18 @@ const api ={
    */
   getComment(params){
     return axios.get(base.baseUrl+base.comment,{params})
+  },
+    /**
+   * 用户评价列表
+   */
+  getOrderComment(params){
+    return axios.get(base.baseUrl+base.orderComment,{params})
+  },
+    /**
+   * 提交评价
+   */
+  submitComment(params){
+    return axios.post(base.baseUrl+base.orderCommentSubmit,params)
   },
 
 

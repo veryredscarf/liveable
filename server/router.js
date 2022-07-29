@@ -5,6 +5,7 @@ const url = require("url")
 const searchData = require("./data/search/index")
 const details = require("./data/details/index")
 const commentData = require("./data/comment/index")
+const orderData = require("./data//order/index")
 const bodyParser = require("body-parser")
 
 
@@ -152,5 +153,49 @@ router.get("/comment",(req,res)=>{
     })
   }
 })
+
+
+/**
+ * 获取订单信息
+ */
+
+router.get("/order/comment",(req,res)=>{
+  
+  
+  const username  = url.parse(req.url,true).query.username
+  if(username){
+    res.send({
+      status:200,
+      result:orderData
+    })
+  }else{
+    res.send({
+      status:403,
+      msg:"请传入用户信息"
+    })
+  }
+})
+
+
+/**
+ * 评价提交
+ */
+
+router.post("/order/submit/comment",(req,res)=>{
+  const {username,id,content} = req.body
+  console.log(content);
+  if(username&&id){
+    res.send({
+      status:200,
+      msg:"评论成功"
+    })
+  }else{
+    res.send({
+      status:403,
+      msg:"信息错误"
+    })
+  }
+})
+
 
 module.exports = router

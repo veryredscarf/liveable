@@ -1,10 +1,21 @@
 import React from 'react'
+import Item from './Item'
 import "./style.less"
 
-function CommentView() {
+function CommentView(props) {
+  const data = props.data
   return (
-    <div>
-      评价信息
+    <div className='comment-list'>
+      <ul>
+        {
+          data.map((ele,index) =>{
+            return <Item data ={ele} key={index}></Item>
+          })
+        }
+      </ul>
+      
+      
+      
     </div>
   )
 }

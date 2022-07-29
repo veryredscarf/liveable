@@ -8,7 +8,12 @@ import AppRouter from './router/index';
 
 import {Provider} from "react-redux"
 import store from "./redux/store/index"
+import "./utils/initUser"
 import Test from "./test/test1"
+
+
+// 页面初始化时，判断本地是否有用户信息，如果有的话，则直接获取用户信息，放进redux中
+
 
 ReactDOM.render(
   <Provider store={store}>
@@ -17,8 +22,6 @@ ReactDOM.render(
       {/* <Test/> */}
     </React.StrictMode>
   </Provider>
-
-
   ,
   document.getElementById('root')
 );

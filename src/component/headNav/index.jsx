@@ -14,7 +14,11 @@ const HeaderNav =(props)=>{
           </Link>
         </div>
         <div className="home-header-right float-right">
-          <i className="iconfont icon-cart"></i>
+          <Link to="/order">
+            <i className="iconfont icon-cart"></i>
+          </Link>
+          
+
         </div>
         <div className="home-header-middle">
           <div className="search-container">
